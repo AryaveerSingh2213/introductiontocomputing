@@ -1,5 +1,5 @@
 #Assignment_2
-#Question_1
+#Question_1_Do as directed:
 
 string_1  ="Python is a case sensitive language"
 print( "The given string is :" , string_1)
@@ -46,32 +46,44 @@ print ( Letter )
 #Question_3_calculate the following :
 
 a=56
+# 56=(111000)2
 b=10
+# 10=(1010)2
 print( "a =", a )
 print( "b =", b )
 
 #(a)_calculate a&b
 c = a&b
+# & = bitwise AND operator
+# c=a&b=56&10 = (111000)2 & (1010)2 = (001000)2 =8
 print( " a&b = " , c)
 
 #(b)_calculate a|b
 d = a|b
+# | = bitwise OR operator
+# d=a|b=56|10 = (111000)2 | (1010)2 = (111010)2 = 58
 print( " a|b = " , d)
 
  #(c)_calculate a^b
 e = a^b
+# ^ = bitwise XOR operator
+# e=a^b=56^10 = (111000)2 ^ (1010)2 = (110010)2 =50
 print( " a^b = " , e )
 
 #(d)_left shift both a and b with 2 bits
 ls_a = a<<2
+# a<<2=(111000)2 <<2 = (11100000)2 = 224
 print( "The value of a after  left shifting with 2 bits is :" , ls_a)
 ls_b = b<<2
+# b<<2=(1010)2 <<2 = (101000)2 = 40
 print( "The value of b after left shifting with 2 bits is :" , ls_b)
 
 #(e)_right shift a with 2 bits and b with 4bits
 rs_a = a>>2
+# a>>2=(111000)2 >>2 = (001110)2 = 14
 print( "The value of a after right shifting with 2 bits is :" , rs_a)
 rs_b = b>>4
+# b>>4=(1010)2 >>4 = (0000)2 =0
 print( "The value of b after right shifting with 4 bits is :" , rs_b)
 
 #Question_4_WAPP to find the greatest of three numbers entered by the user
@@ -92,12 +104,14 @@ print( " The greatest number is :" , Grt_num )
 #Question_5_WAPP to check if  the word "name" is present in the string entered by the user
 
 String = input( " Enter any string : " )
-name_count = String.count("name")
+print(" The entered string is :" , String)
 
-if name_count>=1 :
-   print( "YES" )
+#check if the word "name" is present in the entered string using the "in" operator
+result = "name" in String            # The "in" operator returns either True or False
+if result==True :
+    print(" YES , the word 'name' is present in the entered string. ")
 else :
-   print( "NO" )
+    print(" NO , the word 'name' is not present in the entered string")
 
 #Question_6_WAPP to check if whether three input lengths can form a triangle or not
 
@@ -106,10 +120,10 @@ B = int(input( " Enter the length of second side : "))
 C = int(input( " Enter the lemgth of third side : "))
 
 if  A>=B+C :
-    print( "NO" )
+    print( "NO , line segments of entered lengths can't form a triangle.")
 elif  B>=C+A :
-    print( "NO" )
+    print( "NO , line segments of entered lengths can't form a triangle.")
 elif  C>=A+B :
-    print( "NO" )
+    print( "NO , line segments of entered lengths can't form a triangle.")
 else :
-    print( "YES" )
+    print( "YES , line segments of entered lengths can form a triangle.")
