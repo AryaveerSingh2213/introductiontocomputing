@@ -33,25 +33,28 @@ b = 10
  a^b =  50
 
 The value of a after  left shifting with 2 bits is : 224
+
 The value of b after left shifting with 2 bits is : 40
 
 The value of a after right shifting with 2 bits is : 14
+
 The value of b after right shifting with 4 bits is : 0
 
-Enter the first number :56
-Enter the second number :45
+Enter the first number :44
+Enter the second number :35
 Enter the third number :76
 
  The greatest number is : 76
 
- Enter any string : Her name is Megan Fox
+ Enter any string :Her name is not Megan Fox .She is Megan Thee Stallion.
+ The entered string is : Her name is not Megan Fox .She is Megan Thee Stallion.
 
-YES
+ YES , the word 'name' is present in the entered string. 
 
- Enter the length of first side : 35
- Enter the length of second side : 43
- Enter the lemgth of third side : 65
+ Enter the length of first side of the triangle : 33
+ Enter the length of second side of the triangle : 25
+ Enter the length of third side of the triangle : 16
 
-YES
+YES , line segments of entered lengths can form a triangle.
 
 Process finished with exit code 0
