@@ -27,11 +27,11 @@ Enter your grade between 4 and 10 including them:10
 
 The required pattern is :
  ABCDEFGHIJK
-   ABCDEFGHI
-     ABCDEFG
-       ABCDE
-         ABC
-           A
+  ABCDEFGHI
+   ABCDEFG
+    ABCDE
+     ABC
+      A
 
 (a):Printing student details stored in the dictionary 
 
