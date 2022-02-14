@@ -10,7 +10,7 @@ x = len(List2)
 y1 = dict()
 y2 = dict()
 
-if x == 1:                       #For string with a single word
+if x == 1:                     #For string with a single word
     for i in String1:
         List1.append(i)
     for j in List1:            #All the unique characters get the value one, if it gets repeated, its value will be incremented by one
@@ -21,7 +21,7 @@ if x == 1:                       #For string with a single word
     print(" The frequency of each character is :", y1)
 
 else:                             #For string with multiple words
-    for i in List2:          #All the unique words get the value one, if it gets repeated, its value will be incremented by one
+    for i in List2:               #All the unique words get the value one, if it gets repeated, its value will be incremented by one
         if i in y2:
             y2[i] = y2[i]+1
         else:
@@ -93,11 +93,11 @@ else:
 
 #Ques_3:WAPP to create a list of tuples with first element as a no. and the second element as its square
 
-List = []                                                                                  #creating empty list
-n = int(input("Enter the number of elements :"))     #taking number of elements as input
+List = []                                                        #creating empty list
+n = int(input("Enter the number of elements :"))                 #taking number of elements as input
 print("Enter the elements of the list :")
 
-for i in range(0, n):                                                            #iterating till the range
+for i in range(0, n):                                            #iterating till the range
     ele = int(input())
     List.append(ele)
 
@@ -142,11 +142,11 @@ print(" Letter Grade is:", Letter_Grade)
 
 #Ques_5:WAPP to print the following pattern
 #ABCDEFGHIJK
-  #ABCDEFGHI
-    #ABCDEFG
-      #ABCDE
-        #ABC
-          #A
+ #ABCDEFGHI
+  #ABCDEFG
+   #ABCDE
+    #ABC
+     #A
 
 Alpha = "ABCDEFGHIJK"
 count = 1
@@ -158,8 +158,8 @@ while(count < 7):
 #Ques_6:WAPP that asks repeatedly the user to enter name and SID of students and perform tasks as given
 
 Student = dict()           #creating an empty dictionary
-Choice = "y"                  #default value
-List_sid = []                   #creating an empty list
+Choice = "y"               #default value
+List_sid = []              #creating an empty list
 
 # (a) Print student details stored in the dictionary
 
@@ -170,7 +170,7 @@ while(Choice == "y"):                               #entering student SIDs as ke
     Name = input("Enter the name of the student:")
     Student[SID] = Name
     Choice = input("Do you want to enter more SIDs and Names ? ('y' or 'n'):")
-    List_sid.append((SID, Name))                                               #to be used later
+    List_sid.append((SID, Name))                                                 #to be used later
 
 print("The entered dictionary is :", Student)
 print("The entered list of SIDs is :", List_sid)
