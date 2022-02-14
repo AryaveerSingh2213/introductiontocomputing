@@ -10,7 +10,7 @@ x = len(List2)
 y1 = dict()
 y2 = dict()
 
-if x == 1:                       #For string with a single word
+if x == 1:                      #For string with a single word
     for i in String1:
         List1.append(i)
     for j in List1:            #All the unique characters get the value one, if it gets repeated, its value will be incremented by one
@@ -142,24 +142,24 @@ print(" Letter Grade is:", Letter_Grade)
 
 #Ques_5:WAPP to print the following pattern
 #ABCDEFGHIJK
-  #ABCDEFGHI
-    #ABCDEFG
-      #ABCDE
-        #ABC
-          #A
+ #ABCDEFGHI
+  #ABCDEFG
+   #ABCDE
+    #ABC
+     #A
 
 Alpha = "ABCDEFGHIJK"
 count = 1
 print("The required pattern is :")
 while(count < 7):
-    print(" "*(count), Alpha[0:11-((count-1)*2)])      #leaves (count) times space" " and prints Alpha ( deletes last two letters ),for count=count+1
+    print(" "*(count-1), Alpha[0:11-((count-1)*2)])      #leaves (count-1) times space" " and prints Alpha ( deletes last two letters ),for count=count+1
     count = count + 1
 
 #Ques_6:WAPP that asks repeatedly the user to enter name and SID of students and perform tasks as given
 
 Student = dict()           #creating an empty dictionary
-Choice = "y"                  #default value
-List_sid = []                   #creating an empty list
+Choice = "y"               #default value
+List_sid = []              #creating an empty list
 
 # (a) Print student details stored in the dictionary
 
