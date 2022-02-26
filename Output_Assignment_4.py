@@ -91,8 +91,8 @@ The required hash value is : 6
  
  #Ques_4 :
 
-Stuart
-22
+Student's name is : Stuart
+Student's roll no. is : 22
 
 Destructor called,thus the object so created is destroyed.
 
