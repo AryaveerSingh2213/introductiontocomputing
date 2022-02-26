@@ -141,8 +141,8 @@ class Student:
         print("Destructor called,thus the object so created is destroyed.")
 
 p1 = Student("Stuart", 22)
-print(p1.name)
-print(p1.roll_no)
+print("Student's name is :", p1.name)
+print("Student's roll no. is :", p1.roll_no)
 
 #Ques_5 : WAPP to store details of three employees : name amd salary using class.
 
